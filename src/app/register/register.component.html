@@ -1,0 +1,30 @@
+<form>
+  <div class="form-group">
+    <label>Nombre</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre" [(ngModel)]="form.nombre" name="nombre">
+  </div>
+  <div class="form-group">
+    <label>Apellido</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Apellido" [(ngModel)]="form.apellido" name="apellido">
+  </div>
+  <div class="form-group">
+    <label>DNI</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Documento" [(ngModel)]="form.dni" name="dni">
+  </div>
+  
+  <div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="M" [(ngModel)]="form.sexo" checked>
+    Hombre
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="F" [(ngModel)]="form.sexo">
+    Mujer
+  </label>
+</div>
+
+<button type="submit" class="btn btn-default" (click)="insert()">Registrar</button>
+
+</form>
