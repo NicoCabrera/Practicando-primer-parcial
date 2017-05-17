@@ -15,6 +15,7 @@ export class GridComponent implements OnInit {
 
   setSelectedItem(selectedItem) {
     this.selectedItem = selectedItem;
+    console.log(this.selectedItem);
   }
 
   ngOnInit() {
